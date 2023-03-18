@@ -1,57 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700;800;900&display=swap');
+
 header {
-    background: #c4c4c4;
+    background: #ffffff;
 }
 
 header .inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
 
-    height: 4em;
+    height: 7em;
     align-items: center;
+}
+
+header h1 a {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+
+    color: rgba(0, 0, 0, 0);
+    
+    background-image: url("../img/CMlogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 header nav ul li {
     display: inline;
-    margin-left: 1em;
+    margin-left: 2em;
     padding: 0.5em;
+    padding-left: 1em;
+
+    font-family: 'Figtree', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.navbar {
+    padding-left: 3em;
 }
 
 header nav ul li a {
-    color: rgb(0, 0, 0);
+    color: #6e6e6e;
     text-decoration: none;
     padding: 0.5em;
 }
 
 header nav ul li a:hover {
     padding: 0.5em;
-    color: #f4f4f4;
+    color: #b8b8b8;
 }
 
 .inner {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 
 .hero {
     background: #f4f4f4;
-    min-height: 200px;
+    min-height: 300px;
+
+    display: flex;
+    align-items: end;
+}
+
+.hero h1 {
+    font-family: 'Prompt', sans-serif;
+    /* font-family: 'Lexend Mega', sans-serif; */
+    font-size: 4em;
+    font-weight: 800;
+    /* font-weight: 900; */
+    letter-spacing: 0.05em;
+    
+    -webkit-text-stroke: 2px #6e6e6e;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "information image";
+
+    min-height: 1800px;
+}
+
+main .content {
+    grid-area: information;
+
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+main .content p {
+    width: 70%;
+
+    padding: 1em 10% 1em 20%;
+    line-height: 2em;
+    
+    font-family: 'Figtree', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+
+    color: #6e6e6e;
+}
+
+main .dbcontainer {
+    grid-area: image;
+
+    display: flex;
+    align-items: end;
+}
+
+main .dbccontainer .divingboard {
+    object-fit: contain;
+    max-width: 75%;
+    opacity: 57%;
+
+    
 }
 
 footer {
-    background: #c4c4c4;
+    background: #6e6e6e;
 
     display: flex;
-    height: 2em;
+    height: 15em;
     align-items: center;
+    text-align: center;
+
+    justify-content: center;
 }
 
+footer div p {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
 
-.gallery {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 0.5em;
-}
+    color: #ffffff;
 
-.gallery div {
-    background-color: blanchedalmond;
+    font-family: 'Figtree', sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
 }
