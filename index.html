@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Canberra Modern</title>
+
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
@@ -11,14 +12,15 @@
     <body>
         <header>
             <div class="inner">
-                <h1><a href="index.html">Canberra Modern</a></h1>
+                <h1><a href="index.html">CanberraModern</a></h1>
 
                 <nav class="navbar">
                     <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="index.html">Canberra's Modern</a></li>
-                        <li><a href="index.html">Involvement</a></li>
-                        <li><a href="index.html">Resources</a></li>
+                        <li><a class="burger">8</a></li>
+                        <li><a href="about.html" class="hidden">About</a></li>
+                        <li><a href="cm.html" class="hidden">Canberra's Modern</a></li>
+                        <li><a href="involvement.html" class="hidden">Involvement</a></li>
+                        <li><a href="resources.html" class="hidden">Resources</a></li>
                     </ul>
                 </nav>
             </div>
@@ -30,8 +32,8 @@
             
         </div>
 
-        <main>
-            <div class="content">
+        <main class="homemain">
+            <div class="intro">
                 <p>
                     Canberra Modern is an annual program of events showcasing Canberra’s 
                     unique mid and late twentieth century places and spaces. 
@@ -49,11 +51,20 @@
                     places which make an irreplaceable contribution to Canberra’s historic 
                     urban and designed cultural landscape.
                 </p>
+
+                <div class="contact">
+                    <h2>CONTACT US</h2>
+                    <p>Name</p>
+                    <p>Email</p>
+                    <p class="message">Message</p>
+
+                    <div class="buttonwrapper">
+                        <button>SEND</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="dbccontainer">
-                <img src="../11056_Project1/assets/img/dbplaceholder.png" class="divingboard">
-            </div>
+            <div class="dbccontainer"></div>
         </main>
 
         <footer>

@@ -2,11 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700;800;900&display=swap');
 
-header {
-    background: #ffffff;
+
+body {
+    font-size: 16px;
+
+    font-family: 'Figtree', sans-serif;
+    color: #6e6e6e;
 }
 
-header .inner {
+p {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+header div{
+    background: #ffffff;
+
     display: flex;
     justify-content: left;
 
@@ -14,9 +25,13 @@ header .inner {
     align-items: center;
 }
 
+.inner {
+    width: 80%;
+    margin: 0 auto;
+}
+
 header h1 a {
-    padding-top: 1.2em;
-    padding-bottom: 1.2em;
+    padding: 1.2em 0em;
 
     color: rgba(0, 0, 0, 0);
     
@@ -26,19 +41,27 @@ header h1 a {
     background-position-x: center;
 }
 
+.navbar {
+    margin-left: 2em;
+}
+
+.burger {
+    display: none;
+}
+
 header nav ul li {
     display: inline;
-    margin-left: 2em;
-    padding: 0.5em;
-    padding-left: 1em;
-
-    font-family: 'Figtree', sans-serif;
+    margin: 0em 1em;
+    padding: 0em 1em;
+    
     font-size: 1.1em;
     font-weight: 600;
 }
 
-.navbar {
-    padding-left: 3em;
+.currentPage {
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 5px;
 }
 
 header nav ul li a {
@@ -50,11 +73,6 @@ header nav ul li a {
 header nav ul li a:hover {
     padding: 0.5em;
     color: #b8b8b8;
-}
-
-.inner {
-    width: 80%;
-    margin: 0 auto;
 }
 
 .hero {
@@ -78,54 +96,169 @@ header nav ul li a:hover {
 
 }
 
-main {
+
+
+/* -- --- -- */
+/* Home Page */
+/* -- --- -- */
+
+.homemain {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "information image";
-
-    min-height: 1800px;
 }
 
-main .content {
+.homemain .intro {
     grid-area: information;
 
     padding-top: 5em;
     padding-bottom: 5em;
 }
 
-main .content p {
+.homemain .intro p {
     width: 70%;
 
     padding: 1em 10% 1em 20%;
     line-height: 2em;
-    
-    font-family: 'Figtree', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
 
     color: #6e6e6e;
 }
 
-main .dbcontainer {
+.homemain .dbccontainer {
     grid-area: image;
 
-    display: flex;
-    align-items: end;
-}
+    margin-top: 5em;
 
-main .dbccontainer .divingboard {
-    object-fit: contain;
-    max-width: 75%;
-    opacity: 57%;
-
+    background-image: url(../img/dbplaceholder.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-size: contain;
     
+    opacity: 57%;
 }
+
+.homemain .contact {
+    width: 55%;
+    padding: 7em 12.5% 0em 22.5%;
+}
+
+.homemain .contact h2 {
+    font-weight: 800;
+    font-size: 1.5em;
+    text-align: center;
+
+    padding-bottom: 1em;
+}
+
+.homemain .contact p {
+    width: 100%;
+
+    padding: 0.7em 0em 0.7em 0.9em;
+    margin: 1em 0em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6e6e6e;
+
+    font-size: 1em;
+}
+
+.homemain .contact .message {
+    height: 7.2em;
+}
+
+.homemain .contact button {
+    font-weight: 700;
+    font-size: 1.2em;
+
+    color: #ffffff;
+    background-color: #f27075;
+
+    padding: 0.5em 0.6em;
+    border-style: none;
+    border-radius: 0.4em;
+}
+
+.homemain .contact .buttonwrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.homemain .contact button:hover {
+    cursor: pointer;
+}
+
+.homemain .contact button:active {
+    background-color: #df666a;
+}
+
+
+
+/* --- -- --- */
+/* About Page */
+/* --- -- --- */
+
+.aboutmain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "";
+
+    min-height: 1800px;
+}
+
+
+
+/* --- --- --- */
+/* - CM Page - */
+/* --- --- --- */
+
+.cmmain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "";
+
+    min-height: 1800px;
+}
+
+
+
+/* --- --- --- */
+/* Involvement */
+/* --- --- --- */
+
+.involvemain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "";
+
+    min-height: 1800px;
+}
+
+
+
+/* ---- --- ---- */
+/* Resource Page */
+/* ---- --- ---- */
+
+.resourcemain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "";
+
+    min-height: 1800px;
+}
+
+
+
+/* --- -- --- */
+/* - Footer - */
+/* --- -- --- */
 
 footer {
     background: #6e6e6e;
 
     display: flex;
-    height: 15em;
+    height: 1em;
     align-items: center;
     text-align: center;
 
@@ -138,7 +271,106 @@ footer div p {
 
     color: #ffffff;
 
-    font-family: 'Figtree', sans-serif;
+    /* font-family: 'Figtree', sans-serif; */
     font-size: 0.9em;
     font-weight: 300;
+}
+
+
+/* ---- --- ---- */
+/* Media Queries */
+/* ---- --- ---- */
+
+@media screen and (max-width: 78em) {
+    body {
+        font-size: 14.5px;
+    }
+
+    header div{
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo"
+                             "navbar";
+
+        height: 14em;
+        text-align: center;
+    }
+
+    .navbar {
+        grid-area: navbar;
+        margin-left: 0em;
+    }
+
+    header nav ul {
+        margin-bottom: 1em;
+    }
+
+    header nav ul li {
+        font-size: 1.214em;
+        margin: 0em;
+    }
+
+    header h1 a {
+        font-size: 1.103em;
+        width: 5em;
+
+        grid-area: logo;
+    }
+
+    .inner  h1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 52em) {
+    body {
+        font-size: 13px;
+    }
+
+    header div{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo"
+                             "navbar";
+
+        height: 33em;
+        text-align: center;
+    }
+
+    .navbar {
+        grid-area: navbar;
+        margin-left: 0em;;
+    }
+
+    header nav ul li {
+        display: block;
+        height: 3em;
+
+        font-size: 1.354em;
+        margin: 0em;
+    }
+
+    .burger {
+        display: contents;
+
+        font-size: 1.1em;
+    }
+
+    .hidden {
+        display: none;
+        visibility: hidden;
+    }
+
+    header h1 a {
+        font-size: 1.231em;
+        width: 5em;
+
+        grid-area: logo;
+    }
+
+    .inner  h1 {
+        width: 100%;
+    }
 }
