@@ -380,14 +380,38 @@ header nav ul li a:hover {
 /* --- --- --- */
 
 .cmmain {
+    
+}
+
+.moderncontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "";
+    grid-template-areas: "left" "right";
 }
 
 .displayitem {
     background-color: #c0c0c0;
     margin: 2em;
+}
+
+.left {
+    grid-area: "left";
+}
+
+.right {
+    grid-area: "right";
+}
+
+.credits {
+    margin: 3em 0em 5em 0em;
+}
+
+.credits h1 {
+    margin-bottom: 0.5em;
+}
+
+.creditslist {
+    line-height: 1.7em;
 }
 
 
