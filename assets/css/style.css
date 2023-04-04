@@ -185,7 +185,7 @@ header nav ul li a:hover {
     height: 7.2em;
 }
 
-.homemain .contact button {
+.homemain .contact .button {
     font-weight: 700;
     font-size: 1.2em;
 
@@ -202,11 +202,11 @@ header nav ul li a:hover {
     justify-content: center;
 }
 
-.homemain .contact button:hover {
+.homemain .contact .button:hover {
     cursor: pointer;
 }
 
-.homemain .contact button:active {
+.homemain .contact .button:active {
     background-color: #df666a;
 }
 
@@ -328,7 +328,7 @@ header nav ul li a:hover {
 .partneritem {
     margin: 1em;
     padding: 1em;
-    background-color: #d7d7d7;
+    /* background-color: #d7d7d7; */
 }
 
 .partneritem .imgdiv {
@@ -345,7 +345,7 @@ header nav ul li a:hover {
     font-weight: 500;
 }
 
-.button {
+.partneritem .button {
     font-weight: 600;
     font-size: 1em;
 
@@ -365,11 +365,11 @@ header nav ul li a:hover {
     justify-content: center;
 }
 
-.button:hover {
+.partneritem .button:hover {
     cursor: pointer;
 }
 
-.button:active {
+.partneritem .button:active {
     background-color: #596ba2;
 }
 
@@ -385,13 +385,18 @@ header nav ul li a:hover {
 
 .moderncontainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-areas: "left" "right";
 }
 
 .displayitem {
-    background-color: #c0c0c0;
+    /* background-color: #c0c0c0; */
     margin: 2em;
+    text-align: center;
+}
+
+.displayitem .imgdiv img {
+    max-width: 90%;
 }
 
 .left {
@@ -400,6 +405,15 @@ header nav ul li a:hover {
 
 .right {
     grid-area: "right";
+}
+
+.displayitem h2 {
+    padding: 1em;
+}
+
+.displayitem p {
+    padding: 1em;
+    padding-top: 0em;
 }
 
 .credits {
