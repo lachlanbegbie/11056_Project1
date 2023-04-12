@@ -2,12 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700;800;900&display=swap');
 
+:root {
+    --offblack: #6e6e6e;
+    --buttonblue: #7486bd;
+    --buttonblue-dark: #596ba2;
+    --redlabel: #f27075;
+}
 
 body {
     font-size: 16px;
 
     font-family: 'Figtree', sans-serif;
-    color: #6e6e6e;
+    color: var(--offblack);
 }
 
 h1 {
@@ -30,7 +36,7 @@ p {
 }
 
 header div{
-    background: #ffffff;
+    background: white;
 
     display: flex;
     justify-content: left;
@@ -79,7 +85,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #6e6e6e;
+    color: var(--offblack);
     text-decoration: none;
     padding: 0.5em;
 }
@@ -111,7 +117,7 @@ header nav ul li a:hover {
     /* font-weight: 900; */
     letter-spacing: 0.05em;
     
-    -webkit-text-stroke: 3px #ffffff;
+    -webkit-text-stroke: 3px white;
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
@@ -140,7 +146,7 @@ header nav ul li a:hover {
     padding: 1em 10% 1em 20%;
     line-height: 2em;
 
-    color: #6e6e6e;
+    color: var(--offblack);
 }
 
 .homemain .dbccontainer {
@@ -177,7 +183,7 @@ header nav ul li a:hover {
     margin: 1em 0em;
     border-style: solid;
     border-width: 1px;
-    border-color: #6e6e6e;
+    border-color: var(--offblack);
 
     font-size: 1em;
 }
@@ -194,8 +200,8 @@ header nav ul li a:hover {
     font-weight: 700;
     font-size: 1.2em;
 
-    color: #ffffff;
-    background-color: #7486bd;
+    color: white;
+    background-color: var(--buttonblue);
 
     padding: 0.5em 0.6em;
     border-style: none;
@@ -212,7 +218,7 @@ header nav ul li a:hover {
 }
 
 .homemain .contact .button:active {
-    background-color: #596ba2;
+    background-color: var(--buttonblue-dark);
 }
 
 
@@ -222,7 +228,7 @@ header nav ul li a:hover {
 /* --- -- --- */
 
 .aboutmain {
-    background-color: #ffffff;
+    background-color: white;
 }
 
 .aboutinfo {
@@ -346,8 +352,8 @@ header nav ul li a:hover {
     font-weight: 600;
     font-size: 1em;
 
-    color: #ffffff;
-    background-color: #7486bd;
+    color: white;
+    background-color: var(--buttonblue);
 
     text-decoration: none;
 
@@ -367,7 +373,7 @@ header nav ul li a:hover {
 }
 
 .partneritem .button:active {
-    background-color: #596ba2;
+    background-color: var(--buttonblue-dark);
 }
 
 
@@ -390,7 +396,7 @@ header nav ul li a:hover {
 }
 
 .atrisk {
-    color: #f27075;
+    color: var(--redlabel);
     font-weight: 800;
 }
 
@@ -467,7 +473,7 @@ header nav ul li a:hover {
 
 .timeline-icon {
     width: 10em;
-    background-color: #7486bd;
+    background-color: var(--buttonblue);
 }
 
 .timeline-content {
@@ -481,7 +487,7 @@ header nav ul li a:hover {
 
 .timeline-date {
     margin-bottom: 1em;
-    border: 2px #6e6e6e;
+    border: 2px var(--offblack);
     border-style: none none solid none;
 }
 
@@ -499,8 +505,8 @@ header nav ul li a:hover {
 
     text-decoration: none;
 
-    color: #ffffff;
-    background-color: #7486bd;
+    color: white;
+    background-color: var(--buttonblue);
 }
 
 .timeline-image-proper {
@@ -545,7 +551,7 @@ header nav ul li a:hover {
 
 .past-date {
     margin-bottom: 1em;
-    border: 1.5px #6e6e6e;
+    border: 1.5px var(--offblack);
     border-style: none none solid none;
 
     font-size: 1em;
@@ -565,8 +571,8 @@ header nav ul li a:hover {
 
     text-decoration: none;
 
-    color: #ffffff;
-    background-color: #7486bd;
+    color: white;
+    background-color: var(--buttonblue);
 }
 
 .past-image-proper {
@@ -606,7 +612,7 @@ header nav ul li a:hover {
 /* --- -- --- */
 
 footer {
-    background: #6e6e6e;
+    background: var(--offblack);
 
     display: flex;
     height: 15em;
@@ -620,7 +626,7 @@ footer div p {
     padding-top: 0.7em;
     padding-bottom: 0.7em;
 
-    color: #ffffff;
+    color: white;
 
     /* font-family: 'Figtree', sans-serif; */
     font-size: 0.9em;
@@ -797,7 +803,7 @@ footer div p {
         margin: 1em 0em;
         border-style: solid;
         border-width: 1px;
-        border-color: #6e6e6e;
+        border-color: var(--offblack);
     
         font-size: 1em;
     }
