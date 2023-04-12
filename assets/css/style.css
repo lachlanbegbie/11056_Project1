@@ -53,7 +53,7 @@ header h1 a {
 
     color: rgba(0, 0, 0, 0);
     
-    background-image: url("../img/CMlogo.png");
+    background-image: url("../img/logoCM.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -61,10 +61,6 @@ header h1 a {
 
 .navbar {
     margin-left: 2em;
-}
-
-.burger {
-    display: none;
 }
 
 header nav ul li {
@@ -95,7 +91,7 @@ header nav ul li a:hover {
 
 .hero {
     background: #f4f4f4;
-    background-image: url("../img/rs=w-1280\,h-854.webp");
+    background-image: url("../img/bannerpic1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -199,7 +195,7 @@ header nav ul li a:hover {
     font-size: 1.2em;
 
     color: #ffffff;
-    background-color: #f27075;
+    background-color: #7486bd;
 
     padding: 0.5em 0.6em;
     border-style: none;
@@ -216,7 +212,7 @@ header nav ul li a:hover {
 }
 
 .homemain .contact .button:active {
-    background-color: #df666a;
+    background-color: #596ba2;
 }
 
 
@@ -231,10 +227,11 @@ header nav ul li a:hover {
 
 .aboutinfo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "para1" "img1"
-                         "para2" "img2"
-                         "para3" "img3";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "para1 img1"
+                         "para2 img2"
+                         "para3 img3";
 }
 
 .infopara1 {
@@ -251,44 +248,35 @@ header nav ul li a:hover {
 
 .aboutimg1 {
     grid-area: "img1";
-
-    background-image: url(../img/canberraarch.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 75%;
-    background-size: contain;
 }
 
 .aboutimg2 {
     grid-area: "img2";
-
-    background-image: url(../img/eventpeople.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 75%;
-    background-size: contain;
 }
 
 .aboutimg3 {
     grid-area: "img3";
-
-    background-image: url(../img/timross.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 75%;
-    background-size: contain;
 }
 
 .aboutmain .para {
-    padding: 5em 5em 5em 6em;
-    margin: 1em 0em;
+    padding: 5em;
+    padding-left: 7em;
+    margin: 3em 0em;
+
+    width: 60%;
+}
+
+.aboutmain .image {
+    display: flex;
+    
+    align-content: center;
+    justify-content: center;
 }
 
 .aboutmain .img {
-    padding: 5em;
-    margin: 3em 0em;
+    width: 95%;
 
-    /* background-color: #bfb2b2; */
+    margin: auto 10em auto auto;
 }
 
 .partners {    
@@ -388,20 +376,22 @@ header nav ul li a:hover {
 /* - CM Page - */
 /* --- --- --- */
 
-.cmmain {
-    
-}
-
 .moderncontainer {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "left" "right";
+
+    margin-top: 3em;
 }
 
 .displayitem {
-    /* background-color: #c0c0c0; */
     margin: 2em;
     text-align: center;
+}
+
+.atrisk {
+    color: #f27075;
+    font-weight: 800;
 }
 
 .displayitem .imgdiv img {
@@ -423,6 +413,11 @@ header nav ul li a:hover {
 .displayitem p {
     padding: 1em;
     padding-top: 0em;
+}
+
+.spotlight {
+    height: 30em;
+    object-fit: cover;
 }
 
 .credits {
@@ -452,6 +447,142 @@ header nav ul li a:hover {
     grid-template-areas: "";
 
     min-height: 1800px;
+}
+
+.title {
+    text-align: center;
+    padding: 1em 0em 1.2em 0em;
+}
+
+/* All styling for "Upcoming Events" timeline */
+
+/* .timeline {
+    border-left: 3px solid #6e6e6e;
+    padding-left: 5em;
+} */
+
+.timeline-item {
+    margin-bottom: 5em;
+}
+
+.timeline-icon {
+    width: 10em;
+    background-color: #7486bd;
+}
+
+.timeline-content {
+    display: flex;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.date-description {
+    padding: 3em;
+}
+
+.timeline-date {
+    margin-bottom: 1em;
+    border: 2px #6e6e6e;
+    border-style: none none solid none;
+}
+
+.item-title {
+    font-size: 1.3em;
+    font-weight: 600;
+
+    line-height: 1.5em;
+}
+
+.eventbooking {
+    padding: 0.8em 1em;
+
+    border-radius: 1em;
+
+    text-decoration: none;
+
+    color: #ffffff;
+    background-color: #7486bd;
+}
+
+.timeline-image-proper {
+    object-fit: cover;
+    max-width: 35em;
+    height: 100%;
+}
+
+#manningclarkpic {
+    height: 23em;
+}
+
+.timeline-description p:last-of-type {
+    margin-top: 2em;
+    margin-right: 1em;
+    float: right;
+
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* All styling for "Past Events" */
+
+.past-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+}
+
+.past-item {
+    margin-bottom: 5em;
+}
+
+.past-content {
+    /* display: flex; */
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.date-description {
+    padding: 2em 3em;
+}
+
+.past-date {
+    margin-bottom: 1em;
+    border: 1.5px #6e6e6e;
+    border-style: none none solid none;
+
+    font-size: 1em;
+}
+
+.past-item-title {
+    font-size: 0.8em;
+    font-weight: 600;
+
+    line-height: 1.5em;
+}
+
+.eventbooking {
+    padding: 0.8em 1em;
+
+    border-radius: 1em;
+
+    text-decoration: none;
+
+    color: #ffffff;
+    background-color: #7486bd;
+}
+
+.past-image-proper {
+    object-fit: cover;
+
+    height: 15em;
+    width: 100%;
+}
+
+#manningclarkpic {
+    height: 23em;
+}
+
+.past-description p {
+    font-size: 0.8em;
+    padding-left: 0em;
 }
 
 
@@ -541,6 +672,50 @@ footer div p {
     .inner  h1 {
         width: 100%;
     }
+
+
+    /* --- -- --- */
+    /* About Page */
+    /* --- -- --- */
+
+    .aboutinfo {
+        display: block;
+        width: 100%;
+    }
+
+    .aboutmain .img {
+        display: none;
+    }
+
+    .partnergallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    
+        grid-template-areas: "part1" "part2"
+                             "part3" "part4"
+                             "part5" "part6";
+    }
+
+    /* --- --- --- */
+    /* - CM Page - */
+    /* --- --- --- */
+
+    .spotlight {
+        height: 15em;
+        width: 90%;
+        object-fit: cover;
+    }
+
+    /* --- --- --- */
+    /* Involvement */
+    /* --- --- --- */
+
+    .timeline-image-proper {
+        object-fit: cover;
+        max-width: 20em;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 52em) {
@@ -583,6 +758,11 @@ footer div p {
         width: 100%;
     }
 
+
+    /* -- --- -- */
+    /* Home Page */
+    /* -- --- -- */
+
     .homemain {
         display: grid;
         grid-template-columns: 1fr;
@@ -594,9 +774,6 @@ footer div p {
         background-position: bottom center;
         background-repeat: no-repeat;
         background-size: auto 53%;
-        /* background-size: contain; */
-        
-        /* opacity: 57%; */
     }
 
     .homemain .intro p {
@@ -627,5 +804,86 @@ footer div p {
 
     .dbccontainer {
         display: none;
+    }
+
+
+    /* --- -- --- */
+    /* About Page */
+    /* --- -- --- */
+
+    .aboutinfo {
+        display: block;
+        width: 100%;
+    }
+
+    .aboutmain .img {
+        display: none;
+    }
+
+    .partnergallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+        grid-template-areas: "part1"
+                             "part2"
+                             "part3"
+                             "part4"
+                             "part5"
+                             "part6";
+    }
+
+    .partnergallery h2 {
+        font-size: 1.6em;
+    }
+    
+    .partnergallery p {
+        font-size: 1.2em;
+    }
+
+    .partnergallery .button {
+        font-size: 1.2em;
+    }
+
+
+    /* --- --- --- */
+    /* - CM Page - */
+    /* --- --- --- */
+
+    .moderncontainer {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .spotlight {
+        height: 30em;
+        width: 90%;
+        object-fit: cover;
+    }
+
+    /* --- --- --- */
+    /* Involvement */
+    /* --- --- --- */
+
+    .timeline-image-proper {
+        display: none;
+    }
+
+    .past-all {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 4%;
+    }
+
+    .past-item-title {
+        font-size: 1em;
+        font-weight: 600;
+    
+        line-height: 1.5em;
+    }
+
+    .past-description p {
+        font-size: 1em;
+        padding-left: 0em;
     }
 }
