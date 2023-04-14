@@ -11,13 +11,14 @@ Following that, I needed to consider how to design the webpage in a consistent a
 
 ## Prototypes
 
-!(Prototype Sketch)[./assets/img/prototypes/IMG.1298.png]
+![IMG_1298](https://user-images.githubusercontent.com/112054325/232038388-5cbd0859-2686-44c7-bd03-cae070554dff.png)
 
 My original low-fidelity prototype sketch established many of the design choices which are present in the final product. The banner looks almost identical to the final product, with the exception of the lines between the options. Most other choices are the same, with the most obvious change being the lack of a timeline in the "Events" page. This was changed due to a limited time frame, and my current knowledge of code would not make that element completely successful or responsive. I also condensed the past events, as they do not need to be highlighted as much as the upcoming ones.
 
-!(Web Prototype)[./assets/img/prototypes/CMPrototypeW.png]
 
-!(Web Prototype)[./assets/img/prototypes/CMPrototypeM.png]
+![CMPrototypeW](https://user-images.githubusercontent.com/112054325/232038049-2b1dd823-f48f-4207-9e8e-89812fe5cee7.png)
+
+![CMPrototypeM](https://user-images.githubusercontent.com/112054325/232038065-50382d00-f88b-4149-8af6-74a737f84fd2.png)
 
 The medium-fidelity prototypes established two main things. First, how colour (or the lack of it) was used within the website. The only difference in colour is that the buttons changed from red to blue. The second thing they established was how the layout would change in response to the viewport size. The largest difference between the prototype and the final product is that the prototype included a hamburger menu, which testing revealed was not necessary as there were few enough menu items to not need it.
 
