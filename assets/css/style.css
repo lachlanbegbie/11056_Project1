@@ -348,7 +348,7 @@ header nav ul li a:hover {
     font-weight: 500;
 }
 
-.partneritem .button {
+.button {
     font-weight: 600;
     font-size: 1em;
 
@@ -564,26 +564,11 @@ header nav ul li a:hover {
     line-height: 1.5em;
 }
 
-.eventbooking {
-    padding: 0.8em 1em;
-
-    border-radius: 1em;
-
-    text-decoration: none;
-
-    color: white;
-    background-color: var(--buttonblue);
-}
-
 .past-image-proper {
     object-fit: cover;
 
     height: 15em;
     width: 100%;
-}
-
-#manningclarkpic {
-    height: 23em;
 }
 
 .past-description p {
@@ -603,6 +588,157 @@ header nav ul li a:hover {
     grid-template-areas: "";
 
     min-height: 1800px;
+}
+
+.articles-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+}
+
+.article-link {
+    text-decoration: none;
+    color: var(--offblack);
+}
+
+.articles-item {
+    margin-bottom: 5em;
+}
+
+.articles-content {
+    /* display: flex; */
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.description {
+    padding: 2em 3em;
+}
+
+.articles-date {
+    font-size: 1em;
+    font-weight: 600;
+
+    line-height: 1.5em;
+
+    margin-bottom: 1em;
+    border: 1.5px var(--offblack);
+    border-style: none none solid none;
+}
+
+.articles-item-title {
+    font-size: 1.3em;
+}
+
+.articles-image-proper {
+    object-fit: cover;
+
+    height: 15em;
+    width: 100%;
+}
+
+.articles-description p {
+    font-size: 1em;
+    padding-left: 0em;
+}
+
+.manningclark-tour {
+    width: 60%;
+    margin: 0 auto;
+
+    padding-bottom: 4em;
+}
+
+.manningclark-tour p {
+    padding-left: 0em;
+}
+
+.manningclark-tour-link {
+    font-size: 1.3em;
+
+    padding-left: 0em;
+    padding-bottom: 1em;
+}
+
+.videos-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+}
+
+.video {
+    margin: 2em 0em;
+}
+
+.videopara {
+    padding: 0.5em;
+    text-align: center;
+
+    line-height: 1.5em;
+}
+
+iframe {
+    width: 100%;
+    height: 40vh;
+}
+
+.links-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 4/3%;
+}
+
+.link {
+    padding: 1em;
+    margin-bottom: 3em;
+
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.link h3 {
+    padding-bottom: 1em;
+}
+
+
+
+/* --- -- --- */
+/*  Articles  */
+/* --- -- --- */
+
+.article-whole {
+    width: 60%;
+    margin: 0 auto;
+
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.article-title {
+    font-size: 2em;
+}
+
+.article-date {
+    font-size: 1.5em;
+}
+
+.article-img {
+    padding: 2em 0em 4em 0em;
+    width: 100%;
+}
+
+.article-para {
+    padding: 0em;
+    font-weight: 100;
+}
+
+.question {
+    font-size: 1.2em;
+    font-style: italic;
+    padding: 2em 0em;
+}
+
+.answer {
+    font-size: 1.2em;
 }
 
 
@@ -721,6 +857,22 @@ footer div p {
         object-fit: cover;
         max-width: 20em;
         height: 100%;
+    }
+
+    /* ---- --- ---- */
+    /* Resource Page */
+    /* ---- --- ---- */
+
+    .articles-all {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4%;
+    }
+
+    .links-all {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2%;
     }
 }
 
@@ -891,5 +1043,25 @@ footer div p {
     .past-description p {
         font-size: 1em;
         padding-left: 0em;
+    }
+
+    /* ---- --- ---- */
+    /* Resource Page */
+    /* ---- --- ---- */
+
+    .articles-all {
+        grid-template-columns: 1fr;
+        column-gap: 0%;
+    }
+
+    .videos-all {
+        grid-template-columns: 1fr;
+        column-gap: 0%;
+    }
+
+    .links-all {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4%;
     }
 }
